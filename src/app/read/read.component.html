@@ -1,0 +1,8 @@
+<div class="" *ngIf="items">
+  <h1>Top Itens</h1>
+  <ul>
+    <li (click)="delItem(i)" *ngFor="let item of items | async; let i = index">
+      <span>{{ item.rank }}</span> - <i>{{ item.name }}</i>
+    </li>
+  </ul>
+</div>
