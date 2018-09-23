@@ -1,9 +1,5 @@
 #TOPDEZ
 
-npm i @ngrx/store --save
-npm i --save ngx-bar-rating
-
-
 Teste Rede Bandeirantes
 
 #pré-requisitos*
@@ -15,8 +11,8 @@ Teste Rede Bandeirantes
 **rxjs              (npm install --save rxjs)<br>
 **ngx bar rating    (npm install --save ngx-bar-rating) <br>
 
-*São necessarios para rodar a aplicação, o exemplo acima se refere a uma instalação
-*LINUX
+*São necessarios para rodar a aplicação, o exemplo acima se refere a uma instalação<br>
+*LINUX<br>
 **LINUX E MAC
 
 ##Iniciando
