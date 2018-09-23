@@ -20,7 +20,7 @@ Teste Rede Bandeirantes
 Para iniciar a aplicação entre na pasta top10 (cd top10 ) e execute o seguinte comando:
  -  ng serve
 
- Caso aconteça um erro de compilação abra qualquer arquivo e salve, isso dará continuidade ao compilamento do projeto
+Caso aconteça um erro de compilação abra qualquer arquivo detro de app( ex: /src/app/app.module.ts  ) e salve, isso dará continuidade ao compilamento do projeto
 
 Podera ver a aplicação rodando no link abaixo
  http://localhost:4200
