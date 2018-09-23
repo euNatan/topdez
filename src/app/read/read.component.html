@@ -1,8 +1,23 @@
-<div class="" *ngIf="items">
-  <h1>Top Itens</h1>
+<div class="games" *ngIf="items">
+  <h1>TOP GAMES</h1>
   <ul>
-    <li (click)="delItem(i)" *ngFor="let item of items | async; let i = index">
-      <span>{{ item.rank }}</span> - <i>{{ item.name }}</i>
+    <li *ngFor="let item of items | async; let i = index" [class.selected]="item === selectedItem" (click)="onSelect(item, i)">
+      <i class="title">{{ item.name }}</i>
+      <button (click)="delItem(i)" class="right">Remover</button>
+      <bar-rating [(rate)]="item.rank" [max]="10" [readOnly]=true></bar-rating>
+
     </li>
   </ul>
+</div>
+
+<div *ngIf="selectedItem" class="modal">
+
+  <h2 class="input">{{selectedItem.name | uppercase}}</h2>
+    <div>
+    <label class="input">Classificação:
+      <bar-rating [(rate)]="selectedItem.rank" [max]="10"></bar-rating><br>
+      <button (click)="updateItem(index, selectedItem.rank)" class="update">Classificar</button>
+    </label>
+  </div>
+
 </div>

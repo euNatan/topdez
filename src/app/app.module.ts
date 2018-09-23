@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BarRatingModule } from "ngx-bar-rating";
 
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store'
@@ -15,6 +16,7 @@ import { CreateComponent } from './create/create.component';
   ],
   imports: [
     BrowserModule,
+    BarRatingModule,
     StoreModule.forRoot({
       item: reducer
     })

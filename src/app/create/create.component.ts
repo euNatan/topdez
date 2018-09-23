@@ -13,6 +13,7 @@ export class CreateComponent implements OnInit {
 
   constructor(private store: Store<AppState>) { }
 
+  //ADICIONA ITEM
   addItem(name, rank) {
     this.store.dispatch(new ItemActions.AddItem({name: name, rank: rank}))
   }
